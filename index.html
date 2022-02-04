@@ -4,9 +4,206 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous'>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Den Of The Geek</title>
+
+    <style>
+      body.debug .container,
+      body.debug .container-fluid {
+        outline: 2px double blue;
+        outline-offset: -2px;
+      }
+    
+      body.debug .row {
+        outline: 2px dashed red;
+        outline-offset: -2px;
+      }
+    
+      body.debug [class*="col-"] {
+        outline: 2px dotted forestgreen;
+        outline-offset: -3px;
+      }
+    </style>
 </head>
-<body>
+
+
+
+<body class="debug">
+
+    <header>
+        <div class="col-6 bg-dark">
+            <h2>Den Of Geek</h2>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+
+
+    <main>
+        <div class="row align-items-end bg-image">
+            <div class="col-2"></div>
+            <div class="col-4">
+
+                <div class="p-1">
+                    <a class="text-light text-center" href="http://google.com/" target="_blank"><h1 class="text-shadow fw-bold mb-4">The Book Of Boba Fett Episode 6 Easter Eggs</h1></a>
+                    <p class="text-light ps-4">By Megan Crouse</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center text-center bg-light">
+
+            <div class="col-3 p-5">
+                <div class="text-center">
+                    <img class="img-fluid rounded-2 img-square" src="https://media.istockphoto.com/photos/sushi-picture-id135849804?b=1&k=20&m=135849804&s=170667a&w=0&h=ssJ24AIse0ExehHxPRlM_eSP_b5oEAtNYd8McXXY-Yo=" alt="Buy Stuff">
+                    <h3 class="text-dark text-center">Hello There</h3>
+                    <p class="text-dark">Something</p>
+                </div>
+            </div>
+
+            <div class="col-4 pt-5">
+                <div class="text-center">
+                    <img class="img-fluid rounded-2 img-middle" src="https://media.istockphoto.com/photos/sushi-picture-id135849804?b=1&k=20&m=135849804&s=170667a&w=0&h=ssJ24AIse0ExehHxPRlM_eSP_b5oEAtNYd8McXXY-Yo=" alt="Buy Stuff">
+                    <h3 class="text-dark text-center">Hello There</h3>
+                    <p class="text-dark">Something</p>
+                </div>
+            </div>
+
+            <div class="col-3 p-5">
+                <div class="text-center">
+                    <img class="img-fluid rounded-2 img-square" src="https://media.istockphoto.com/photos/sushi-picture-id135849804?b=1&k=20&m=135849804&s=170667a&w=0&h=ssJ24AIse0ExehHxPRlM_eSP_b5oEAtNYd8McXXY-Yo=" alt="Buy Stuff">
+                    <h3 class="text-dark text-center">Hello There</h3>
+                    <p class="text-dark">Something</p>
+                </div>
+            </div>
+            
+        </div>
+
+
+        <div class="row justify-content-center text-center bg-danger">
+
+            <div class="col-12 rectangle pt-2"></div>
+
+
+            <div class="col-3 p-5">
+                <div class="text-center">
+                    <img class="img-fluid rounded-2 img-story" src="https://media.istockphoto.com/photos/sushi-picture-id135849804?b=1&k=20&m=135849804&s=170667a&w=0&h=ssJ24AIse0ExehHxPRlM_eSP_b5oEAtNYd8McXXY-Yo=" alt="Buy Stuff">
+                    <h3 class="text-dark text-center">Hello There</h3>
+                    <p class="text-dark">Something</p>
+                </div>
+            </div>
+
+            <div class="col-3 p-5">
+                <div class="text-center">
+                    <img class="img-fluid rounded-2 img-story" src="https://media.istockphoto.com/photos/sushi-picture-id135849804?b=1&k=20&m=135849804&s=170667a&w=0&h=ssJ24AIse0ExehHxPRlM_eSP_b5oEAtNYd8McXXY-Yo=" alt="Buy Stuff">
+                    <h3 class="text-dark text-center">Hello There</h3>
+                    <p class="text-dark">Something</p>
+                </div>
+            </div>
+
+            <div class="col-3 p-5">
+                <div class="text-center">
+                    <img class="img-fluid rounded-2 img-story" src="https://media.istockphoto.com/photos/sushi-picture-id135849804?b=1&k=20&m=135849804&s=170667a&w=0&h=ssJ24AIse0ExehHxPRlM_eSP_b5oEAtNYd8McXXY-Yo=" alt="Buy Stuff">
+                    <h3 class="text-dark text-center">Hello There</h3>
+                    <p class="text-dark">Something</p>
+                </div>
+            </div>
+
+            <div class="col-3 p-5">
+                <div class="text-center">
+                    <img class="img-fluid rounded-2 img-story" src="https://media.istockphoto.com/photos/sushi-picture-id135849804?b=1&k=20&m=135849804&s=170667a&w=0&h=ssJ24AIse0ExehHxPRlM_eSP_b5oEAtNYd8McXXY-Yo=" alt="Buy Stuff">
+                    <h3 class="text-dark text-center">Hello There</h3>
+                    <p class="text-dark">Something</p>
+                </div>
+            </div>
+            
+        </div>
+
+
+
+
+
+
+        <div class="row justify-content-center text-center bg-light">
+            <div class="col-3">
+                <a class="btn btn-wasabi" href="#product-area">Shop Now</a>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="row justify-content-middle">
+            <div class="col-10">
+
+                <div class="row justify-content-center">
+                    <div class="col-6">Boba Fett</div>
+                    <div class="col-6">Ghosts</div>
+                    <div class="col-12">1</div>
+                    <div class="col-12">2</div>
+                    <div class="col-12">3</div>
+                    <div class="col-12">4</div>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="row justify-content-center">
+                    <h3 class="moveDown text-center bg-dark text-light">MUST READS</h3>
+                    <div class="col-12">Test</div>
+                    <div class="col-12">Test</div>
+                    <div class="col-12">Test</div>
+                    <div class="col-12">Test</div>
+                    <div class="col-12">Test</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer>
+footer
+    </footer>
     
 </body>
 </html>

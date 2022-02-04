@@ -1,0 +1,51 @@
+:root {
+    --black: #000000;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+
+}
+
+.padding-top {
+    
+    padding-top: 2rem;
+}
+
+.bg-image {
+    min-height: 60vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://www.denofgeek.com/wp-content/uploads/2022/02/star-wars-the-book-of-boba-fett-episode-6-hero-banner.jpg?fit=2000%2C500&resize=2000%2C500);
+}
+
+.img-square {
+    height: 15vw;
+    width: 80vw;
+    object-fit: cover;
+}
+
+.img-middle {
+    height: 17vw;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.rectangle {
+    width: 90vw;
+    height: 3px;
+    background-color: black;
+}
+
+.img-story {
+    height: 15vw;
+    width: 60vw;
+    object-fit: cover;
+}
+
+.moveDown {
+    transform: translateY(-50%);
+}
