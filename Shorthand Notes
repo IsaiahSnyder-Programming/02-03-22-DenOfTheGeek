@@ -1,0 +1,94 @@
+HTML Shorthand Basics:
+
+To create a tag:
+tagName + enter/tab
+ex:
+h4 + enter =
+
+<h4></h4>
+
+
+
+To create multiple tags:
+tagName*number + enter
+ex:
+h4*4 + enter:
+
+<h4></h4>
+<h4></h4>
+<h4></h4>
+<h4></h4>
+
+
+
+To put something inside of a tag:
+tagName{content} + enter
+ex:
+p{Stuff} + enter =
+
+<p>Stuff</p>
+
+
+
+To create another tag WITHIN a tag:
+tagName>otherTagName + enter
+ex:
+div>div>h4>a + enter =
+
+<div>
+    <div>
+        <h4>
+            <a></a>
+        </h4>
+    </div>
+</div>
+
+
+
+To create multiple DIFFERENT tags all within the same tag:
+tagName>tag1+tag2 + enter
+ex:
+div>h1+h2 + enter =
+
+<div>
+    <h1></h1>
+    <h2></h2>
+</div>
+
+
+
+To create a tag with a Class:
+tagName.className + enter
+ex:
+h1.coolClass + enter =
+
+<h1 class="coolClass"></h1>
+
+These stack too:
+h1.coolClass.otherClass.anotherClass + enter =
+
+<h1 class="coolClass otherClass anotherClass"></h1>
+
+
+
+To create a tag with an ID:
+tagName#className + enter
+ex:
+h1#coolId + enter = 
+<h1 id="coolId"></h1>
+
+
+
+All of this can 100% be used together, and are wonderful for notes. Heres a very good example of everything being used at once:
+
+div.bestClass#bestId>div+h1{h1 contents}+p{Lorem GoesHere}+h3.okayClass.mehClass{More Lorem} + enter =
+
+<div class="bestClass" id="bestId">
+    <div></div>
+    <h1>h1 contents</h1>
+    <p>Lorem Goes Here</p>
+    <h3 class="okayClass mehClass">More Lorem</h3>
+</div>
+
+Let me know if this makes sense, and if you need any further help, you can always slack me!
+:)
